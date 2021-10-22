@@ -1,5 +1,4 @@
 FROM Ubuntu
-RUN Sudo apt update -y
-RUN Sudo apt install apache2
-COPY * /var/www/html/
+RUN apt update -y
+RUN apt install apache2
 EXPOSE 80:80
